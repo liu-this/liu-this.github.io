@@ -94,15 +94,15 @@
 
 
 
-<meta name="description" content="Step one 注册一个github账号，创建一个[yourname].github.io的repository。    本地生成SSH公钥（关于SSH协议，下篇博客讲解）   1$ ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;  1$ cd ~&#x2F;.ssh  123$ lsauthorized_keys2  id_rsa       known_">
+<meta name="description" content="JAVA集合继承关系Collection├List│├LinkedList│├ArrayList│└Vector│　└Stack└Set-HashSet Map├HashTable├HashMap│　└LinkedHashMap├WeakHashMap">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo踩坑之路">
-<meta property="og:url" content="http://yoursite.com/2017/09/24/Hexo%E8%B8%A9%E5%9D%91%E4%B9%8B%E8%B7%AF/index.html">
+<meta property="og:title" content="JAVA 集合类简述">
+<meta property="og:url" content="http://yoursite.com/2017/10/15/JAVA%20%E9%9B%86%E5%90%88%E7%B1%BB%E7%AE%80%E8%BF%B0/index.html">
 <meta property="og:site_name" content="lzd&#39;s blog">
-<meta property="og:description" content="Step one 注册一个github账号，创建一个[yourname].github.io的repository。    本地生成SSH公钥（关于SSH协议，下篇博客讲解）   1$ ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;  1$ cd ~&#x2F;.ssh  123$ lsauthorized_keys2  id_rsa       known_">
+<meta property="og:description" content="JAVA集合继承关系Collection├List│├LinkedList│├ArrayList│└Vector│　└Stack└Set-HashSet Map├HashTable├HashMap│　└LinkedHashMap├WeakHashMap">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2017-09-24T09:21:51.000Z">
-<meta property="article:modified_time" content="2017-10-12T05:50:08.000Z">
+<meta property="article:published_time" content="2017-10-15T08:06:36.000Z">
+<meta property="article:modified_time" content="2018-03-11T06:27:40.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -133,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/24/Hexo踩坑之路/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/15/JAVA 集合类简述/"/>
 
 
 
 
 
-  <title>Hexo踩坑之路 | lzd's blog</title>
+  <title>JAVA 集合类简述 | lzd's blog</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/24/Hexo%E8%B8%A9%E5%9D%91%E4%B9%8B%E8%B7%AF/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/15/JAVA%20%E9%9B%86%E5%90%88%E7%B1%BB%E7%AE%80%E8%BF%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo踩坑之路</h1>
+          <h1 class="post-title" itemprop="name headline">JAVA 集合类简述</h1>
         
 
         <div class="post-meta">
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-24T17:21:51+08:00">
-                2017-09-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-15T16:06:36+08:00">
+                2017-10-15
               </time>
             
 
@@ -329,77 +329,37 @@
       
 
       
-        <h1 id="Step-one"><a href="#Step-one" class="headerlink" title="Step one"></a>Step one</h1><ul>
-<li><p>注册一个<a href="https://github.com" target="_blank" rel="noopener">github</a>账号，创建一个[yourname].github.io的repository。  </p>
-</li>
-<li><p>本地生成SSH公钥（关于SSH协议，下篇博客讲解）</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@youremail.com"</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ls</span><br><span class="line">authorized_keys2  id_rsa       known_hosts</span><br><span class="line">config            id_rsa.pub</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim id_rsa.pub</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>复制公钥到Github</li>
-</ul>
+        <h1 id="JAVA集合继承关系"><a href="#JAVA集合继承关系" class="headerlink" title="JAVA集合继承关系"></a>JAVA集合继承关系</h1><p><strong>Collection</strong><br>├List<br>│├LinkedList<br>│├ArrayList<br>│└Vector<br>│　└Stack<br>└Set-HashSet</p>
+<p><strong>Map</strong><br>├HashTable<br>├HashMap<br>│　└LinkedHashMap<br>├WeakHashMap  </p>
 <a id="more"></a>
 
+<h1 id="ArrayList-VS-LinkedList"><a href="#ArrayList-VS-LinkedList" class="headerlink" title="ArrayList VS LinkedList"></a>ArrayList VS LinkedList</h1><h2 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h2><ul>
+<li>基于数组，在数组中搜索和读取数据是很快的。因此 ArrayList 获取数据的时间复杂度是O(1);</li>
+<li>但是添加、删除时该元素后面的所有元素都要移动，所以添加/删除数据效率不高；</li>
+<li>另外其实还是有容量的，每次达到阈值需要扩容，这个操作比较影响效率。</li>
+</ul>
+<h2 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h2><ul>
+<li>实现了Queue、Deque接口，可以用作队列和栈；</li>
+<li>基于双端链表，添加/删除元素只会影响周围的两个节点，开销很低；（JDK1.7之前使用双向循环链表实现）；</li>
+<li>只能顺序遍历，无法按照索引获得元素，因此查询效率不高；</li>
+<li>没有固定容量，不需要扩容；</li>
+<li>需要更多的内存，每个节点中需要多存储前后节点的信息，占用空间更多些。</li>
+</ul>
+<h1 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h1><h2 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h2><ul>
+<li>底层实现是 链表数组，JDK 8 后又加了 红黑树</li>
+<li>允许空键和空值（但空键只有一个，且放在第一位）</li>
+<li>元素是无序的，而且顺序会不定时改变</li>
+<li>插入、获取的时间复杂度基本是 O(1)（前提是有适当的哈希函数，让元素分布在均匀的位置）</li>
+<li>遍历整个 Map 需要的时间与 桶(数组) 的长度成正比（因此初始化时 HashMap 的容量不宜太大）</li>
+<li>两个关键因子：初始容量、加载因子。默认初始容量：16，必须是 2 的整数次方；默认加载因子的大小：0.75</li>
+<li>哈希表容量取 2 的整数次幂，有以下 2 点好处：散列函数hash&amp;(length-1)使用减法替代取模，提升计算效率；为了使不同 hash 值发生碰撞的概率更小，尽可能促使元素在哈希表中均匀地散列。</li>
+</ul>
+<h2 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h2><p>LinkedHashMap继承自HashMap，增加了时间和空间上的开销，但是它通过维护一个额外的双向链表保证了迭代顺序</p>
+<h2 id="迭代注意事项"><a href="#迭代注意事项" class="headerlink" title="迭代注意事项"></a>迭代注意事项</h2><p>ArrayList使用for循环和Iterator效率差不多，这两种方式原理一样，调用get方法，ArrayList采用数组，随机存取效率高；<br>LinkedList推荐使用Iterator进行迭代，LinkedList内部的Iterator通过遍历链表实现迭代，效率高；若使用for循环，get方法需要循环一半的链表，效率较低。</p>
+<h1 id="使用原则"><a href="#使用原则" class="headerlink" title="使用原则"></a>使用原则</h1><p>如果涉及到堆栈，考虑用Deque，并发考虑Stack；对于需要快速插入，删除元素，应该使用LinkedList；如果需要快速随机访问元素，应该使用ArrayList。  </p>
+<p>缺省使用非同步的类，其效率较高；如果多个线程可能同时操作一个类，应该使用同步的类：Vector、Hashtable。  </p>
+<p>要特别注意对哈希表的操作，作为key的对象要正确复写equals和hashCode方法。</p>
 
-<h1 id="Step-two"><a href="#Step-two" class="headerlink" title="Step two"></a>Step two</h1><ul>
-<li>安装node</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install node</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>安装hexo</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<ul>
-<li>初始化hexo</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog(文件夹名字随意)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>安装deployer扩展</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h1 id="Step-three"><a href="#Step-three" class="headerlink" title="Step three"></a>Step three</h1><ul>
-<li>修改hexo配置文件_config.xml，指向github中仓库</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourname&#x2F;yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<ul>
-<li>新建一篇文章，保存在source/_post下面</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="built_in">test</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>修改test.md</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo踩坑之路</span><br><span class="line">date: 2017-09-24 17:21:51</span><br><span class="line">tags:</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
-<ul>
-<li>生成静态文件，会在当前目录下生成一个新的叫做public的文件夹</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<ul>
-<li>启动本地web服务，用于博客的预览</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<ul>
-<li>部署博客到远端</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<h1 id="More"><a href="#More" class="headerlink" title="More"></a>More</h1><ul>
-<li>下载主题(以next为例)</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<ul>
-<li>修改配置文件_config.yml</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -423,14 +383,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/10/10/Android%20Window%20%E6%A6%82%E8%BF%B0/" rel="next" title="Android Window概述">
+                <i class="fa fa-chevron-left"></i> Android Window概述
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/01/SSH%E5%8D%8F%E8%AE%AE%E6%B5%85%E6%9E%90/" rel="prev" title="SSH协议浅析">
-                SSH协议浅析 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/29/Activity%E7%9A%84LaunchMode%E5%92%8CIntent-Flags%E8%AF%A6%E8%A7%A3/" rel="prev" title="Activity的LaunchMode和Intent Flags详解">
+                Activity的LaunchMode和Intent Flags详解 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -547,7 +511,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-one"><span class="nav-number">1.</span> <span class="nav-text">Step one</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-two"><span class="nav-number">2.</span> <span class="nav-text">Step two</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-three"><span class="nav-number">3.</span> <span class="nav-text">Step three</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#More"><span class="nav-number">4.</span> <span class="nav-text">More</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JAVA集合继承关系"><span class="nav-number">1.</span> <span class="nav-text">JAVA集合继承关系</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ArrayList-VS-LinkedList"><span class="nav-number">2.</span> <span class="nav-text">ArrayList VS LinkedList</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ArrayList"><span class="nav-number">2.1.</span> <span class="nav-text">ArrayList</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LinkedList"><span class="nav-number">2.2.</span> <span class="nav-text">LinkedList</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Map"><span class="nav-number">3.</span> <span class="nav-text">Map</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HashMap"><span class="nav-number">3.1.</span> <span class="nav-text">HashMap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LinkedHashMap"><span class="nav-number">3.2.</span> <span class="nav-text">LinkedHashMap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代注意事项"><span class="nav-number">3.3.</span> <span class="nav-text">迭代注意事项</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用原则"><span class="nav-number">4.</span> <span class="nav-text">使用原则</span></a></li></ol></div>
             
 
           </div>
